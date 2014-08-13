@@ -148,6 +148,7 @@ default[:cassandra][:encryption][:client] = {
   :require_client_auth   => false
 }
 
+default[:cassandra][:source_dir] = "/usr/local/apache-cassandra-#{node[:cassandra][:version]}"
 
 # node.cassandra.installation_dir subdirs
 default[:cassandra][:bin_dir] = File.join(node.cassandra.installation_dir, 'bin')
